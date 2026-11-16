@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="PASTMASTER - Find Sri Lankan O/L, A/L and school past papers, model papers and marking schemes.">
+  <title>PASTMASTER | Past Papers Made Easy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap');
+:root{--navy:#101d3a;--blue:#315cf5;--muted:#71809b;--line:#e8edf5;--bg:#f7f9fd;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:'DM Sans',sans-serif;color:var(--navy);background:#fff}a{text-decoration:none;color:inherit}button,input,select{font:inherit}.container{width:min(1160px,calc(100% - 44px));margin:auto}
+.site-header{height:82px;background:#fff;display:flex;align-items:center;position:sticky;top:0;z-index:20;border-bottom:1px solid #edf0f6}.nav-wrap{display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:10px;font:800 19px Manrope,sans-serif;letter-spacing:-.7px}.brand-mark{width:39px;height:39px;border-radius:12px;background:var(--blue);color:white;display:grid;place-items:center;font-size:23px;box-shadow:0 7px 16px #315cf53b}.brand-accent{color:var(--blue)}.brand small{display:block;font:700 8px 'DM Sans';letter-spacing:1.45px;color:#8b96aa;margin-top:2px}.site-header nav{display:flex;gap:35px}.site-header nav a{font-size:13px;font-weight:700;color:#65718a;transition:.2s}.site-header nav a:hover,.site-header nav a.active{color:var(--blue)}.nav-cta{background:#f0f3ff;color:var(--blue);padding:12px 17px;border-radius:10px;font-size:12px;font-weight:800}.nav-cta span{margin-left:8px}.menu-toggle{display:none;border:0;background:none;font-size:25px;color:var(--navy)}
+.hero{background:#f5f7ff;position:relative;overflow:hidden;padding:92px 0 83px}.hero:before{content:"";position:absolute;width:600px;height:600px;border-radius:50%;background:#e7edff;right:-150px;top:-250px}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:45px;position:relative}.eyebrow,.section-kicker{font-size:10px;letter-spacing:2px;font-weight:800;color:var(--blue)}.eyebrow{display:flex;align-items:center;gap:9px}.eyebrow-dot{width:7px;height:7px;border-radius:50%;background:#23c99a;box-shadow:0 0 0 5px #23c99a1c}.hero h1{font:800 clamp(46px,6vw,72px)/1.08 Manrope,sans-serif;letter-spacing:-3.5px;margin:23px 0 20px}.hero h1 span,.section-heading h2 span,.cta-box h2 span{color:var(--blue)}.hero-description{max-width:510px;color:#6c7890;font-size:15px;line-height:1.9}.hero-actions{display:flex;gap:13px;margin-top:30px}.button{display:inline-flex;align-items:center;gap:22px;padding:15px 20px;border-radius:10px;font-size:12px;font-weight:800;transition:.2s}.button:hover{transform:translateY(-2px)}.button-primary{background:var(--blue);color:white;box-shadow:0 10px 22px #315cf52c}.button-ghost{border:1px solid #dfe5f1;color:#45536d;background:#fff}.hero-proof{display:flex;align-items:center;gap:13px;margin-top:37px}.avatar-stack{display:flex}.avatar-stack i{font-style:normal;width:32px;height:32px;border-radius:50%;display:grid;place-items:center;background:white;border:2px solid #f5f7ff;margin-right:-7px;font-size:14px}.hero-proof p{font-size:11px;line-height:1.6;margin:0}.hero-proof p span{color:#8490a5}.hero-art{height:380px;position:relative;display:grid;place-items:center}.art-orbit{position:absolute;border:1px dashed #c8d4ff;border-radius:50%;width:350px;height:350px}.orbit-two{width:285px;height:285px;border-color:#d9e0f5}.paper-illustration{position:relative;width:260px;height:320px;background:#fff;border-radius:9px;padding:25px 23px;box-shadow:0 25px 65px #263b7930;transform:rotate(5deg);z-index:2}.paper-top{display:flex;justify-content:space-between;font-size:8px;font-weight:800;color:#62708a}.paper-pill{background:#eef2ff;color:var(--blue);padding:5px 7px;border-radius:4px;font-size:7px}.paper-line{height:5px;background:#e8edf5;border-radius:5px;margin-top:25px}.paper-line.short{width:45%}.paper-heading{text-align:center;font:800 17px Manrope;margin-top:23px}.paper-sub{text-align:center;font-size:6px;letter-spacing:1px;color:#8994a8;margin-top:6px}.paper-rule{height:1px;background:#e9edf4;margin:20px 0}.question-row{display:flex;gap:12px;align-items:center;margin:17px 0}.question-row b{font-size:9px;color:var(--blue)}.question-row span{height:5px;border-radius:5px;background:#edf0f6;flex:1}.paper-footer{position:absolute;bottom:22px;left:23px;right:23px;border-top:1px solid #e9edf4;padding-top:12px;display:flex;justify-content:space-between;font-size:7px;color:#8792a5;font-weight:700}.float-card{position:absolute;z-index:3;display:flex;align-items:center;gap:10px;background:white;padding:12px 15px;border-radius:12px;box-shadow:0 12px 35px #243b771b}.float-card-top{top:48px;right:0}.float-card-bottom{bottom:35px;left:0}.float-icon{width:30px;height:30px;border-radius:9px;background:#e8fbf4;color:#13ae7d;display:grid;place-items:center;font-weight:900}.float-icon.purple{background:#f1edff;color:#8259e9}.float-card b,.float-card small{display:block}.float-card b{font-size:10px}.float-card small{font-size:9px;color:#8792a5;margin-top:3px}.hero-spark{position:absolute;right:40px;bottom:45px;color:#ffb64a;font-size:24px}.hero-bottom-line{position:absolute;bottom:0;left:0;width:100%;height:4px;background:linear-gradient(90deg,#315cf5 0 32%,#8b74fa 32% 63%,#22c99b 63%)}
+.stats-section{border-bottom:1px solid var(--line)}.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);padding:26px 0}.stats-grid div{display:flex;align-items:center;justify-content:center;gap:12px;border-right:1px solid var(--line)}.stats-grid div:last-child{border:0}.stats-grid strong{font:800 21px Manrope;color:var(--blue)}.stats-grid span{font-size:11px;color:#8490a5}
+.section{padding:88px 0}.section-heading{display:flex;justify-content:space-between;align-items:end;margin-bottom:30px}.section-heading h2{font:800 34px Manrope;letter-spacing:-1.3px;margin:10px 0}.section-heading p{font-size:13px;color:#8290a6;margin:0}.text-link{font-size:12px;color:var(--blue);font-weight:800}.text-link span{margin-left:8px}.grade-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.grade-card{display:flex;align-items:center;gap:13px;text-align:left;background:white;border:1px solid var(--line);padding:17px 15px;border-radius:13px;cursor:pointer;transition:.2s;color:var(--navy)}.grade-card:hover{border-color:#b7c5ff;transform:translateY(-3px);box-shadow:0 12px 30px #263b790c}.grade-icon{width:42px;height:42px;border-radius:11px;display:grid;place-items:center;font:800 12px Manrope}.blue{background:#eaf0ff;color:#315cf5}.green{background:#e8faf3;color:#0ca779}.orange{background:#fff3e6;color:#e78a25}.pink{background:#fff0f4;color:#e65c87}.purple{background:#f2edff;color:#805be8}.navy{background:#eaf0f7;color:#263d65}.teal{background:#e6f9f8;color:#079a94}.gold{background:#fff7df;color:#c18a13}.grade-card b,.grade-card small{display:block}.grade-card b{font-size:12px}.grade-card small{font-size:10px;color:#8a95a8;margin-top:4px}.grade-card i{font-style:normal;margin-left:auto;color:#a5afc0}.papers-section{background:#f8faff}.paper-count{font-size:11px;color:#7c89a0;background:#edf1fa;padding:8px 12px;border-radius:20px}.filter-panel{display:flex;gap:12px;margin-bottom:22px}.search-box{height:48px;display:flex;align-items:center;gap:10px;padding:0 15px;background:#fff;border:1px solid var(--line);border-radius:10px;flex:1}.search-box span{font-size:22px;color:#8491a8}.search-box input{border:0;outline:0;width:100%;font-size:12px;color:var(--navy)}.filter-panel select{min-width:155px;border:1px solid var(--line);background:white;border-radius:10px;padding:0 13px;color:#53617a;font-size:11px;outline:0}.paper-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.paper-card{background:white;border:1px solid var(--line);border-radius:14px;padding:19px;transition:.2s}.paper-card:hover{transform:translateY(-3px);box-shadow:0 14px 30px #243b790d}.paper-card-top{display:flex;justify-content:space-between;align-items:center}.paper-type{font-size:9px;font-weight:800;color:var(--blue);background:#eef2ff;padding:7px 9px;border-radius:6px}.paper-year{font-size:10px;color:#8b96a8}.paper-card h3{font:700 15px Manrope;margin:17px 0 8px}.paper-card p{font-size:11px;line-height:1.7;color:#8490a5;margin:0 0 17px}.paper-meta{display:flex;gap:12px;font-size:10px;color:#77849a;padding-bottom:15px;border-bottom:1px solid #eff2f7}.paper-meta span{display:flex;align-items:center;gap:5px}.paper-actions{display:flex;gap:8px;margin-top:15px}.paper-actions a{flex:1;text-align:center;padding:10px 8px;border-radius:8px;font-size:10px;font-weight:800}.preview-btn{background:#f1f4fb;color:#596780}.download-btn{background:var(--blue);color:white}.demo-note{font-size:10px;color:#9aa4b5;margin-top:20px}.empty-state{text-align:center;padding:50px 15px}.empty-state>span{font-size:32px;color:#9aa8c2}.empty-state h3{margin:10px 0 5px}.empty-state p{font-size:12px;color:#8490a5}
+.cta-section{padding:15px 0 85px}.cta-box{background:#111f42;border-radius:20px;padding:52px 60px;color:white;display:flex;align-items:center;justify-content:space-between;position:relative;overflow:hidden}.cta-box:after{content:"";position:absolute;width:320px;height:320px;border:1px solid #ffffff15;border-radius:50%;right:180px;top:-180px;box-shadow:0 0 0 35px #ffffff08,0 0 0 70px #ffffff05}.cta-box .section-kicker{color:#8ea8ff}.cta-box h2{font:800 32px/1.25 Manrope;letter-spacing:-1px;margin:12px 0}.cta-box h2 span{color:#8fa8ff}.cta-box p{font-size:12px;color:#aab5ce}.button-light{background:white;color:#20325b;z-index:1}.cta-decoration{position:absolute;right:45%;top:40px;color:#8da5ff;font-size:25px}
+.footer{border-top:1px solid var(--line)}.footer-main{display:flex;align-items:center;justify-content:space-between;padding:28px 0}.footer-main>p{font-size:11px;color:#8792a5}.footer-brand{font-size:16px}.footer-brand .brand-mark{width:34px;height:34px;font-size:19px}.back-top{font-size:11px;color:var(--blue);font-weight:800}.footer-bottom{border-top:1px solid #edf0f5;padding:17px 0;display:flex;justify-content:space-between;color:#9aa4b5;font-size:10px}
+@media(max-width:850px){.site-header nav{gap:17px}.hero-grid{gap:15px}.hero-art{transform:scale(.88)}.grade-grid{grid-template-columns:repeat(2,1fr)}.paper-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:650px){.container{width:min(100% - 30px,500px)}.site-header{height:70px}.menu-toggle{display:block;margin-left:auto}.site-header nav{display:none;position:absolute;top:69px;left:0;right:0;background:white;padding:18px 22px;box-shadow:0 12px 18px #172b4b12;flex-direction:column;gap:18px}.site-header nav.open{display:flex}.nav-cta{display:none}.hero{padding:62px 0 48px}.hero-grid{grid-template-columns:1fr}.hero h1{font-size:48px;letter-spacing:-2.5px}.hero-description{font-size:13px}.hero-art{height:340px;transform:scale(.9);margin-top:10px}.stats-grid{grid-template-columns:repeat(2,1fr);gap:20px 0}.stats-grid div:nth-child(2){border:0}.stats-grid strong{font-size:18px}.stats-grid span{font-size:10px}.section{padding:62px 0}.section-heading{align-items:start;gap:12px;flex-direction:column}.section-heading h2{font-size:29px}.grade-grid{gap:10px}.grade-card{padding:12px 10px;gap:8px}.grade-icon{width:36px;height:36px}.grade-card b{font-size:11px}.grade-card small{font-size:9px}.filter-panel{flex-wrap:wrap}.search-box{flex-basis:100%}.filter-panel select{height:43px;flex:1;min-width:0}.paper-grid{grid-template-columns:1fr}.cta-section{padding-bottom:55px}.cta-box{padding:35px 25px;align-items:flex-start;gap:20px;flex-direction:column}.cta-box h2{font-size:28px}.cta-box:after{right:-130px}.footer-main{align-items:flex-start;gap:16px;flex-direction:column}.footer-bottom{gap:8px;flex-direction:column}}
+
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#"><span class="brand-mark">P</span><span>PAST<span class="brand-accent">MASTER</span><small>LEARN • PRACTICE • ACHIEVE</small></span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+      <nav id="mainNav">
+        <a class="active" href="#home">Home</a>
+        <a href="#papers">Past Papers</a>
+        <a href="#grades">Grades</a>
+        <a href="#about">About</a>
+      </nav>
+      <a class="nav-cta" href="#papers">Explore Papers <span>↗</span></a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-glow"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-dot"></span> YOUR SMART STUDY COMPANION</div>
+          <h1>Prepare smarter.<br><span>Achieve more.</span></h1>
+          <p class="hero-description">Your trusted place to find Sri Lankan past papers, model papers and marking schemes. Everything you need for better exam preparation.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#papers">Explore Past Papers <span>→</span></a>
+            <a class="button button-ghost" href="#about">Learn More</a>
+          </div>
+          <div class="hero-proof"><div class="avatar-stack"><i>📘</i><i>✏️</i><i>🎓</i></div><p><strong>Study with confidence</strong><br><span>Practice today. Succeed tomorrow.</span></p></div>
+        </div>
+        <div class="hero-art">
+          <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+          <div class="paper-illustration">
+            <div class="paper-top"><span>PASTMASTER</span><span class="paper-pill">EXAM PAPER</span></div>
+            <div class="paper-line short"></div><div class="paper-heading">QUESTION PAPER</div>
+            <div class="paper-sub">GENERAL CERTIFICATE OF EDUCATION</div>
+            <div class="paper-rule"></div>
+            <div class="question-row"><b>01.</b><span></span></div><div class="question-row"><b>02.</b><span></span></div><div class="question-row"><b>03.</b><span></span></div>
+            <div class="paper-footer"><span>TIME: 2 HOURS</span><span>PAGE 01 / 12</span></div>
+          </div>
+          <div class="float-card float-card-top"><span class="float-icon">✓</span><span><b>Study smarter</b><small>One paper at a time</small></span></div>
+          <div class="float-card float-card-bottom"><span class="float-icon purple">✦</span><span><b>Your next goal</b><small>Better exam results</small></span></div>
+          <div class="hero-spark">✦</div>
+        </div>
+      </div>
+      <div class="hero-bottom-line"></div>
+    </section>
+
+    <section class="stats-section">
+      <div class="container stats-grid">
+        <div><strong>O/L</strong><span>Exam resources</span></div>
+        <div><strong>A/L</strong><span>Exam resources</span></div>
+        <div><strong>06–11</strong><span>School grades</span></div>
+        <div><strong>PDF</strong><span>Easy access</span></div>
+      </div>
+    </section>
+
+    <section class="section grades-section" id="grades">
+      <div class="container">
+        <div class="section-heading">
+          <div><span class="section-kicker">FIND YOUR LEVEL</span><h2>Choose your <span>grade</span></h2><p>Start with the learning resources made for your class.</p></div>
+          <a class="text-link" href="#papers">View all papers <span>→</span></a>
+        </div>
+        <div class="grade-grid">
+          <button class="grade-card" data-grade="6"><span class="grade-icon blue">06</span><span><b>Grade 06</b><small>School papers</small></span><i>↗</i></button>
+          <button class="grade-card" data-grade="7"><span class="grade-icon green">07</span><span><b>Grade 07</b><small>School papers</small></span><i>↗</i></button>
+          <button class="grade-card" data-grade="8"><span class="grade-icon orange">08</span><span><b>Grade 08</b><small>School papers</small></span><i>↗</i></button>
+          <button class="grade-card" data-grade="9"><span class="grade-icon pink">09</span><span><b>Grade 09</b><small>School papers</small></span><i>↗</i></button>
+          <button class="grade-card" data-grade="10"><span class="grade-icon purple">10</span><span><b>Grade 10</b><small>O/L preparation</small></span><i>↗</i></button>
+          <button class="grade-card" data-grade="11"><span class="grade-icon navy">11</span><span><b>Grade 11</b><small>O/L preparation</small></span><i>↗</i></button>
+          <button class="grade-card exam-grade" data-grade="AL"><span class="grade-icon teal">A/L</span><span><b>Advanced Level</b><small>A/L papers</small></span><i>↗</i></button>
+          <button class="grade-card exam-grade" data-grade="OL"><span class="grade-icon gold">O/L</span><span><b>Ordinary Level</b><small>O/L papers</small></span><i>↗</i></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section papers-section" id="papers">
+      <div class="container">
+        <div class="section-heading">
+          <div><span class="section-kicker">BUILD YOUR CONFIDENCE</span><h2>Explore past <span>papers</span></h2><p>Find a paper, practise questions and prepare for success.</p></div>
+          <span class="paper-count" id="paperCount">6 resources</span>
+        </div>
+        <div class="filter-panel">
+          <label class="search-box"><span>⌕</span><input type="search" id="searchInput" placeholder="Search subject or paper..."></label>
+          <select id="gradeFilter" aria-label="Filter by grade"><option value="all">All grades</option><option value="6">Grade 06</option><option value="7">Grade 07</option><option value="8">Grade 08</option><option value="9">Grade 09</option><option value="10">Grade 10</option><option value="11">Grade 11</option><option value="OL">O/L</option><option value="AL">A/L</option></select>
+          <select id="typeFilter" aria-label="Filter by resource type"><option value="all">All types</option><option value="Past Paper">Past Papers</option><option value="Model Paper">Model Papers</option><option value="Marking Scheme">Marking Schemes</option></select>
+        </div>
+        <div class="paper-grid" id="paperGrid"></div>
+        <div class="empty-state" id="emptyState" hidden><span>⌕</span><h3>No papers found</h3><p>Try changing your search or filters.</p></div>
+        <p class="demo-note">Demo resources are shown below. Replace the sample PDF links in <b>script.js</b> with your own uploaded PDF files.</p>
+      </div>
+    </section>
+
+    <section class="cta-section" id="about">
+      <div class="container cta-box">
+        <div class="cta-decoration">✦</div>
+        <div><span class="section-kicker">YOUR FUTURE STARTS HERE</span><h2>Every great result begins<br>with <span>practice.</span></h2><p>Make PASTMASTER part of your study routine. Keep learning, keep improving.</p></div>
+        <a class="button button-light" href="#papers">Start Practising <span>→</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-main">
+      <a class="brand footer-brand" href="#"><span class="brand-mark">P</span><span>PAST<span class="brand-accent">MASTER</span><small>LEARN • PRACTICE • ACHIEVE</small></span></a>
+      <p>Making exam preparation easier for every student.</p>
+      <a href="#home" class="back-top">Back to top ↑</a>
+    </div>
+    <div class="container footer-bottom"><span>© <span id="year"></span> PASTMASTER. All rights reserved.</span><span>Built for learners in Sri Lanka 🇱🇰</span></div>
+  </footer>
+  <script>
+// Demo paper data. Replace each pdf value with the path to your real PDF file.
+const papers = [
+  { title: "Mathematics Past Paper", subject: "Mathematics", grade: "11", type: "Past Paper", year: "2024", language: "English Medium", pdf: "pdfs/grade-11-maths-2024.pdf" },
+  { title: "Science Model Paper", subject: "Science", grade: "11", type: "Model Paper", year: "2025", language: "English Medium", pdf: "pdfs/grade-11-science-model-2025.pdf" },
+  { title: "English Past Paper", subject: "English", grade: "10", type: "Past Paper", year: "2023", language: "English Medium", pdf: "pdfs/grade-10-english-2023.pdf" },
+  { title: "History Marking Scheme", subject: "History", grade: "OL", type: "Marking Scheme", year: "2024", language: "Sinhala Medium", pdf: "pdfs/ol-history-marking-2024.pdf" },
+  { title: "Biology Past Paper", subject: "Biology", grade: "AL", type: "Past Paper", year: "2022", language: "English Medium", pdf: "pdfs/al-biology-2022.pdf" },
+  { title: "ICT Model Paper", subject: "ICT", grade: "AL", type: "Model Paper", year: "2025", language: "English Medium", pdf: "pdfs/al-ict-model-2025.pdf" }
+];
+
+const paperGrid = document.getElementById("paperGrid");
+const searchInput = document.getElementById("searchInput");
+const gradeFilter = document.getElementById("gradeFilter");
+const typeFilter = document.getElementById("typeFilter");
+const paperCount = document.getElementById("paperCount");
+const emptyState = document.getElementById("emptyState");
+
+function renderPapers() {
+  const search = searchInput.value.trim().toLowerCase();
+  const grade = gradeFilter.value;
+  const type = typeFilter.value;
+
+  const filtered = papers.filter(paper => {
+    const matchesSearch = `${paper.title} ${paper.subject} ${paper.grade} ${paper.year}`.toLowerCase().includes(search);
+    const matchesGrade = grade === "all" || paper.grade === grade;
+    const matchesType = type === "all" || paper.type === type;
+    return matchesSearch && matchesGrade && matchesType;
+  });
+
+  paperGrid.innerHTML = filtered.map(paper => `
+    <article class="paper-card">
+      <div class="paper-card-top">
+        <span class="paper-type">${paper.type}</span>
+        <span class="paper-year">${paper.year}</span>
+      </div>
+      <h3>${paper.title}</h3>
+      <p>${paper.subject} learning resource for ${paper.grade === "AL" ? "Advanced Level" : paper.grade === "OL" ? "Ordinary Level" : "Grade " + paper.grade} students.</p>
+      <div class="paper-meta">
+        <span>▣ ${paper.grade === "AL" || paper.grade === "OL" ? paper.grade : "Grade " + paper.grade}</span>
+        <span>◉ ${paper.language}</span>
+      </div>
+      <div class="paper-actions">
+        <a class="preview-btn" href="${paper.pdf}" target="_blank" rel="noopener">Preview ↗</a>
+        <a class="download-btn" href="${paper.pdf}" download>Download ↓</a>
+      </div>
+    </article>
+  `).join("");
+
+  paperCount.textContent = `${filtered.length} resource${filtered.length === 1 ? "" : "s"}`;
+  emptyState.hidden = filtered.length !== 0;
+}
+
+[searchInput, gradeFilter, typeFilter].forEach(element => {
+  element.addEventListener("input", renderPapers);
+  element.addEventListener("change", renderPapers);
+});
+
+document.querySelectorAll(".grade-card").forEach(card => {
+  card.addEventListener("click", () => {
+    gradeFilter.value = card.dataset.grade;
+    renderPapers();
+    document.getElementById("papers").scrollIntoView({ behavior: "smooth" });
+  });
+});
+
+document.getElementById("menuToggle").addEventListener("click", () => {
+  document.getElementById("mainNav").classList.toggle("open");
+});
+
+document.querySelectorAll("#mainNav a").forEach(link => {
+  link.addEventListener("click", () => document.getElementById("mainNav").classList.remove("open"));
+});
+
+document.getElementById("year").textContent = new Date().getFullYear();
+renderPapers();
+
+  </script>
+</body>
+</html>
